@@ -1,0 +1,29 @@
+{
+  "name": "shop-app",
+  "version": "0.0.1",
+  "main": "script.js",
+  "author": "OH",
+  "description": "shop-app",
+  "dependencies": {
+    "gulp-install": "^1.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-jshint": "^2.0.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.5"
+  },
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "license": "ISC"
+}

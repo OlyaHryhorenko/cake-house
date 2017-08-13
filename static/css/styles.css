@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+body {
+  font-size: 16px;
+  font-family: "Lobster", cursive; }
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/banner-raspberryalomond.jpg");
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 250px; }
+  .banner a {
+    color: #fff;
+    font-size: 4em;
+    position: relative; }
+    .banner a:before, .banner a:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 50%;
+      width: 200px; }
+    .banner a:before {
+      right: 100%;
+      margin-right: 25px; }
+    .banner a:after {
+      left: 100%;
+      margin-left: 25px; }
+
+figure {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 50%;
+  background: #5d3335;
+  text-align: center;
+  cursor: pointer; }
+  figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8; }
+  figure h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0); }
+
+figure figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(201, 48, 44, 0.52) 75%);
+  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(201, 48, 44, 0.48) 75%);
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0); }
+
+figure h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #000;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0); }
+
+figure figcaption::before,
+figure p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s; }
+
+figure p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0); }
+
+figure:hover h2 {
+  color: #fff;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0); }
+
+figure:hover figcaption::before,
+figure:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.main-block {
+  margin: 100px auto;
+  text-align: center; }
+
+footer {
+  border-top: 1px dashed #000; }
+
+body.admin header {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/banner-raspberryalomond.jpg");
+  height: 100px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom 160px;
+  text-align: center;
+  padding-top: 30px; }
+  body.admin header h1 {
+    color: #fff; }
